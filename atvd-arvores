@@ -1,16 +1,44 @@
 1. Defina os seguintes termos relacionados a árvores:
-a. Raiz
-b. Pai e Filho
-c. Irmãos
-d. Folha
-e. Altura
-f. Profundidade
+a. Raiz - Quem será o primeiro nó, o nó PAI, ou seja, onde vai começar.
+A partir dele que virão os outros elementos que façam sentido com a
+hierarquia estipulada.
+
+b. Pai e Filho - O nó que tem ligação com outros nós. Um nó pai também
+pode ser filho.
+
+c. Irmãos - Nós que tem o mesmo PAI
+
+d. Folha - Geralmente o último nó de uma árvore, que não tem outras
+ligações, no caso, não tem filhos.
+
+e. Altura - É o número máximo de níveis da raiz até a última folha, o nó
+folha é o que estipula onde acaba a árvore (a mais profunda).
+
+f. Profundidade -  É a distância em arestas até um determinado nó.
 
 2. Qual a diferença entre altura de um nó e profundidade de um nó em uma
 árvore? Explique com um exemplo.
+É que a profundidade não necessariamente equivale a altura da árvore,
+a altura é referente a folha mais profunda da árvore, já a profundidade
+se refere a um nó especifico, a quantos ligações ele está ligado.
+Quando falamos de profundidade, falamos de um nó especifico, por exemplo
+um nó de número 9 tem profundidade 2 pois tem 2 arestas até chegar a ele,
+já a altura é refente a última folha (podendo ou não haver outras folhas
+no mesmo nível).
 
 3. Liste e explique três tipos diferentes de árvores, destacando suas
 principais características e usos.
+Árvore, árvore binária, árvore binária de busca
+
+Árvore ordenada: Conceitualmente são estruturas de dados hierárquicas, compostas por
+nós conectados por arestas, ordenados, podendo ou não ter mais de 2 filhos.
+Árvore binária: Mesmo conceito da árvore comum, porém, pode ter até no
+máximo 2 ramificações, não se limitando a uma regra especifica para inserir
+os nós.
+Árvore binária de busca: Mesmo conceito da árvore binária, porém, ela é
+organizada com base em algum princípio estabelecido, cumprindo a regra que
+já existe uma raiz, e deve-se inserir um valor a essa raiz.
+
 
 4. Qual a diferença entre uma árvore binária e uma árvore geral? Dê
 exemplos de onde cada uma é aplicada.
