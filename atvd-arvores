@@ -1,0 +1,52 @@
+1. Defina os seguintes termos relacionados a árvores:
+a. Raiz
+b. Pai e Filho
+c. Irmãos
+d. Folha
+e. Altura
+f. Profundidade
+
+2. Qual a diferença entre altura de um nó e profundidade de um nó em uma
+árvore? Explique com um exemplo.
+
+3. Liste e explique três tipos diferentes de árvores, destacando suas
+principais características e usos.
+
+4. Qual a diferença entre uma árvore binária e uma árvore geral? Dê
+exemplos de onde cada uma é aplicada.
+
+5. O que é uma Árvore de Busca Binária (BST) e quais são as regras que
+definem sua estrutura?
+
+6. Considerando a àrvore da figura, responda:
+a. Qual a altura da árvore?
+b. Qual a profundidade do nó F?
+c. Qual a altura do nó B?
+d. Podemos dizer que esta árvore é binária?
+e. Qual o grau do nó A?
+f. Qual o grau do nó D?
+
+7. Considerando a àrvore da figura, responda:
+a. Esta árvore é binária? Justifique.
+b. Qual a profundidade da árvore?
+c. Qual a profundidade do nó 14?
+d. Qual o grau do nó 6?
+e. Qual o grau do nó 13?
+
+8. Considerando a àrvore da figura, responda:
+a. Qual das árvores tem altura menor?
+b. Qual delas seria mais eficiente para busca e
+inserção?
+c. Qual a profundidade da árvore A?
+d. Qual a profundidade da árvore B?
+e. Qual das árvores tem filhos com mais
+graus? Justifique.
+
+9. Considerando a àrvore da figura, responda:
+a. O que deve acontecer ao remover o nó 30
+para garantir que a árvore continue sendo
+uma árvore binária de busca?
+b. O que deve acontecer ao remover o nó 70
+para garantir que a árvore continue sendo
+uma árvore binária de busca?
+c. Esta é uma árvore balanceada? Justifique.
