@@ -60,4 +60,4 @@ playlist.adicionar_musica("Dois Triste", "Simone Mendes")
 
 playlist.display(limit=6)
 
-playlist.tocar_playlist(repetir=True, limite=9)
+playlist.tocar_playlist(repetir=True, limite=10)

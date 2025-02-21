@@ -21,7 +21,7 @@ class CircularDoublyLinkedList:
             new_node.next = self.head
             self.head.prev = new_node
 
-    def display(self, limit=5):
+    def display(self, limit=10):
         if not self.head:
             print("Lista vazia!")
             return
@@ -38,5 +38,6 @@ lista_circular.insertByPosition('A')
 lista_circular.insertByPosition('B')
 lista_circular.insertByPosition('C')
 lista_circular.insertByPosition('D')
+lista_circular.insertByPosition('X')
 
 lista_circular.display()

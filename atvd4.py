@@ -8,7 +8,7 @@ class LinkedList:
         self._head = None
         self._length = 0
 
-    def insert_at_end(self, data):
+    def insertAtEnd(self, data):
         new_node = Node(data)
         if self._head is None:
             self._head = new_node
@@ -19,7 +19,7 @@ class LinkedList:
             current.next = new_node
         self._length += 1
 
-    def insert_at_beginning(self, data):
+    def insertAtBeginning(self, data):
         new_node = Node(data)
         new_node.next = self._head
         self._head = new_node
@@ -47,10 +47,10 @@ class LinkedList:
 
 # Teste do código
 linked = LinkedList()
-linked.insert_at_end('A')
-linked.insert_at_end('B')
-linked.insert_at_end('C')
-linked.insert_at_end('D')
+linked.insertAtEnd('A')
+linked.insertAtEnd('B')
+linked.insertAtEnd('C')
+linked.insertAtEnd('D')
 
 linked.display()
 

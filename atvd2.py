@@ -7,7 +7,7 @@ class LinkedList:
     def __init__(self):
         self._head = None
         self._length = 0
-    def insert_at_end(self, data):
+    def insertAtEnd(self, data):
         new_node = Node(data)
         if self._head is None:
             self._head = new_node
@@ -20,11 +20,11 @@ class LinkedList:
                 current = current.next
             current.next = new_node
         self._length+=1
-    def insert_at_beginning(self, data):
+    def insertAtBeginning(self, data):
         new_node = Node(data)
         new_node.next = self._head
         self._head = new_node
-    def delete_at_end(self):
+    def deleteAtEnd(self):
         prev = None
         current = self._head
         while current.next:
@@ -34,13 +34,13 @@ class LinkedList:
         current = None
         self._length-=1
 
-    def delete_at_beginning(self):
+    def deleteAtBeginning(self):
         if not self.head:
             print("Lista vazia!")
             return
         self.head = self.head.next
         self._length-=1
-    def search_by_key(self, key):
+    def searchByKey(self, key):
         current = None
         pos = 0
         if self._head is not None:
@@ -92,10 +92,10 @@ class LinkedList:
             current = current.next
 
 linked = LinkedList()
-linked.insert_at_end('A')
-linked.insert_at_end('B')
-linked.insert_at_end('C')
-linked.insert_at_end('D')
+linked.insertAtEnd('A')
+linked.insertAtEnd('B')
+linked.insertAtEnd('C')
+linked.insertAtEnd('D')
 
 linked.insertByPosition('X', 3)
 
