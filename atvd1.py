@@ -2,24 +2,24 @@ class Musica:
     def __init__(self, titulo, autor):
         self.titulo = titulo
         self.autor = autor
-        self.proxima = None  # Ponteiro para a próxima música
+        self.proxima = None
 
 
 class Playlist:
     def __init__(self):
-        self.atual = None  # Ponteiro para a música atual
+        self.atual = None
 
     def adicionar_musica(self, titulo, autor):
         nova_musica = Musica(titulo, autor)
         if self.atual is None:
             self.atual = nova_musica
-            self.atual.proxima = self.atual  # Aponta para si mesma
+            self.atual.proxima = self.atual
         else:
             temp = self.atual
             while temp.proxima != self.atual:
                 temp = temp.proxima
             temp.proxima = nova_musica
-            nova_musica.proxima = self.atual  # Mantém a estrutura circular
+            nova_musica.proxima = self.atual
 
     def tocar_playlist(self, repetir=False, limite=10):
         if self.atual is None:
@@ -34,10 +34,10 @@ class Playlist:
             temp = temp.proxima
             count += 1
             if temp == self.atual and not repetir:
-                break  # Para se não for para repetir
+                break
         print("...")
 
-    def display(self, limit=5):  # Exibe os elementos, evitando loop infinito
+    def display(self, limit=0):
         if self.atual is None:
             print("Lista vazia!")
             return
@@ -50,7 +50,6 @@ class Playlist:
         print("...")
 
 
-# Criando e testando a playlist
 playlist = Playlist()
 playlist.adicionar_musica("A Praia", "Mastruz Com Leite")
 playlist.adicionar_musica("Anjo Querubim", "Limão com Mel")
@@ -59,8 +58,6 @@ playlist.adicionar_musica("Minha herança", "Ana Castela")
 playlist.adicionar_musica("Brigas", "Lagosta Bronzeada")
 playlist.adicionar_musica("Dois Triste", "Simone Mendes")
 
-# Testando a exibição segura
 playlist.display(limit=6)
 
-# Testando a playlist com limite de repetição
-playlist.tocar_playlist(repetir=True, limite=8)
+playlist.tocar_playlist(repetir=True, limite=9)

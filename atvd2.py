@@ -61,8 +61,6 @@ class LinkedList:
 
     def insertByPosition(self, data, position):
         new_node = Node(data)
-
-        # Inserir no início
         if position == 0:
             new_node.next = self._head
             self._head = new_node
@@ -70,7 +68,7 @@ class LinkedList:
             return
 
         current = self._head
-        pos = 0  # Usando a mesma estrutura do método display
+        pos = 0
 
         while current and pos < position - 1:
             current = current.next

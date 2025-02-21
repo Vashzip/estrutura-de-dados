@@ -30,17 +30,16 @@ class LinkedList:
         current = self._head
 
         while current:
-            next_node = current.next  # Armazena o próximo nó
-            current.next = prev  # Inverte o ponteiro do nó atual
-            prev = current  # Move prev para o nó atual
-            current = next_node  # Move current para o próximo nó
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
 
-        self._head = prev  # Atualiza a cabeça da lista
+        self._head = prev
 
     def display(self):
         current = self._head
-        print('-------')
-        print('N° de Elementos:', self._length)
+        print('\nN° de Elementos:', self._length)
         while current:
             print(current.data, end=' --> ')
             current = current.next
